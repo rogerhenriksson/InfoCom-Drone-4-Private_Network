@@ -7,7 +7,7 @@ import redis
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 app.secret_key = 'dljsaklqk24e21cjn!Ew@@dsa5'
-socket = SocketIO(app, cors_allowed_origins="*")
+socket = SocketIO(app, cors_allowed_origins="*",manage_session=False)
 
 # change this so rhat you can connect to your redis server
 # ===============================================
