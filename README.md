@@ -6,7 +6,7 @@ sudo apt install python3-socketio
 sudo apt install python3-engineio
 sudo apt install python3-flask-socketio
 sudo apt install python3-flask-cors
-sudo apt install python-3-geopy
+sudo apt install python3-geopy
 ```
 
 ## On the server
