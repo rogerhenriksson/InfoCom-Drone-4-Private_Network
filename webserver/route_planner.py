@@ -26,7 +26,7 @@ def route_planner():
     FromAddress = Addresses['faddr']
     ToAddress = Addresses['taddr']
     
-    current_location = (redis_server.get('longitude'), redis_server.get('latitude'))
+    current_location = (float(redis_server.get('longitude')), float(redis_server.get('latitude')))
     from_location = geolocator.geocode(FromAddress + region)
     to_location = geolocator.geocode(ToAddress + region)
     if from_location is None:
